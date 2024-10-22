@@ -176,7 +176,7 @@ Available endpoints:
 
 
 ```shell
-curl "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings" \
+curl "https://api.ladbrokes.com.au/affiliates/v1/racing/meetings" \
   -H "From: joe@blogs.com.au" \
   -H "X-Partner: Joe Blogs Pty Ltd"
 ```
@@ -248,7 +248,7 @@ func main() {
 		Timeout: time.Second * 30,
 	}
 
-	req, err := http.NewRequest("GET", "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings", nil)
+	req, err := http.NewRequest("GET", "https://api.ladbrokes.com.au/affiliates/v1/racing/meetings", nil)
 	if err != nil {
 		panic(err)
 	}
@@ -337,7 +337,7 @@ This endpoint retrieves all meetings.
 
 ### HTTP Request
 
-`GET https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings`
+`GET https://api.ladbrokes.com.au/affiliates/v1/racing/meetings`
 
 ### Meeting Request Parameters
 
@@ -365,7 +365,7 @@ Remember — Please include your identification headers!
 
 
 ```shell
-curl "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings/1f2d507d-e4b7-4d14-8463-17842301684b" \
+curl "https://api.ladbrokes.com.au/affiliates/v1/racing/meetings/1f2d507d-e4b7-4d14-8463-17842301684b" \
   -H "From: joe@blogs.com.au" \
   -H "X-Partner: Joe Blogs Pty Ltd"
 ```
@@ -437,7 +437,7 @@ func main() {
 		Timeout: time.Second * 30,
 	}
 
-	req, err := http.NewRequest("GET", "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings/1f2d507d-e4b7-4d14-8463-17842301684b", nil)
+	req, err := http.NewRequest("GET", "https://api.ladbrokes.com.au/affiliates/v1/racing/meetings/1f2d507d-e4b7-4d14-8463-17842301684b", nil)
 	if err != nil {
 		panic(err)
 	}
@@ -526,7 +526,7 @@ This endpoint retrieves a specific meeting.
 
 ### HTTP Request
 
-`GET https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/meetings/<ID>`
+`GET https://api.ladbrokes.com.au/affiliates/v1/racing/meetings/<ID>`
 
 ### Meeting Request Parameters
 
@@ -548,7 +548,7 @@ Remember — Please include your identification headers!
 
 
 ```shell
-curl "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/events/ad76bf91-684d-4a49-bf04-b4284237e65d" \
+curl "https://api.ladbrokes.com.au/affiliates/v1/racing/events/ad76bf91-684d-4a49-bf04-b4284237e65d" \
   -H "From: joe@blogs.com.au" \
   -H "X-Partner: Joe Blogs Pty Ltd"
 ```
@@ -696,7 +696,7 @@ func main() {
 		Timeout: time.Second * 30,
 	}
 
-	req, err := http.NewRequest("GET", "https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/events/ad76bf91-684d-4a49-bf04-b4284237e65d", nil)
+	req, err := http.NewRequest("GET", "https://api.ladbrokes.com.au/affiliates/v1/racing/events/ad76bf91-684d-4a49-bf04-b4284237e65d", nil)
 	if err != nil {
 		panic(err)
 	}
@@ -972,7 +972,7 @@ This endpoint retrieves a specific race.
 
 ### HTTP Request
 
-`GET https://api-affiliates.ladbrokes.com.au/affiliates/v1/racing/events/{id}`
+`GET https://api.ladbrokes.com.au/affiliates/v1/racing/events/{id}`
 
 ### Race Request Parameters
 
